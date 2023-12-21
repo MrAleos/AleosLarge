@@ -31,8 +31,6 @@ public class Task1 {
             case "Кельн":
                 System.out.println("Германия");
                 break;
-            case "Stop":
-                break;
             default:
                 System.out.println("Неизвестная страна");
         }

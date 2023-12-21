@@ -7,7 +7,6 @@ public class Task4 {
         int [] array = new int[100];
         Random random = new Random();
         int summ = 0;
-        int a = 0;
         int index = 0;
 
         for (int i = 0; i < array.length; i++) {
@@ -15,7 +14,11 @@ public class Task4 {
         }
 
         for (int i = 0; i < array.length-2; i++) {
-            a = array[i] + array[i+1] + array[i+2];
+            int a = 0;
+            for (int j = i; j < i + 3; j++) {
+                a += array[j];
+            }
+
             if (a > summ) {
                 summ = a;
                 index = i;

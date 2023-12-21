@@ -9,12 +9,13 @@ public class Task3 {
         int a = scanner.nextInt();
         System.out.print("Введите второе число: ");
         int b = scanner.nextInt();
+        int s = a + 1;
 
-        while (a < b){
-            a++;
-            if (a % 5 == 0 && a % 10 != 0) {
-                System.out.println(a);
+        while (s < b){
+            if (s % 5 == 0 && s % 10 != 0) {
+                System.out.println(s);
             }
+            s++;
         }
     }
 }
