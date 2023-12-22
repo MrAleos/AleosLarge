@@ -1,4 +1,4 @@
-package day6;
+package day7;
 
 public class Airplane {
     private String manufacturer;
@@ -50,5 +50,17 @@ public class Airplane {
     public int fillUp (int n) {
         fuel = fuel  + n;
         return fuel;
+    }
+
+    public static void compareAirplanes (Airplane airplane1, Airplane airplane2) {
+        if (airplane1.length > airplane2.length) {
+            System.out.println(airplane1.manufacturer + " больше, чем " + airplane2.manufacturer);
+        }
+        else if (airplane2.length > airplane1.length) {
+            System.out.println(airplane2.manufacturer + " больше, чем " + airplane1.manufacturer);
+        }
+        else {
+            System.out.println("Самолеты равны.");
+        }
     }
 }
